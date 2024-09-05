@@ -15,8 +15,7 @@ Ao final da execução do deploy, você terá um cluster criado e um sistema de 
 Fique à vontade para realizar um fork desse projeto e utilizá-lo. Assim, você não precisará baixar ou instalar qualquer dependência em sua máquina local
 ##
 #### Tenha uma chave SSH
-A primeira coisa que você precisará para esse projeto é de uma chave SSH. Você pode ver [este tutorial](https://docs.github.com/pt/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) caso não saiba como fazer
-Para que o Actions funcione, você precisará salvar suas chaves SSH privada e pública como secrets do repositório github. Os nomes devem ser "**PRIVATE_KEY**" e "**PUBLIC_KEY**", respectivamente
+A primeira coisa que você precisará para esse projeto é de uma chave SSH. Você pode ver [este tutorial](https://docs.github.com/pt/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) caso não saiba como fazer. Para que o Actions funcione, você precisará salvar suas chaves SSH privada e pública como secrets do repositório github convertidas em base64. Os nomes devem ser "**PRIVATE_KEY**" e "**PUBLIC_KEY**", respectivamente.
 ##
 #### Crie um usuário no IAM
 O próximo passo será criar, em sua AWS Account, um usuário que terá as permissões para criar os recursos necessários na AWS. Em [policy.json](./docs/examples/policy.json), eu deixei disponível a policy que criei na minha conta e que dá todos os acessos que serão necessários
