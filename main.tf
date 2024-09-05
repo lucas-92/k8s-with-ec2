@@ -2,7 +2,7 @@
 variable "access_key" {}
 variable "secret_key" {}
 variable "k8s_subnet_cidr" {
-  default = "172.31.64.0/20" // Altere esse valor para o correspondente com sua VPC
+  default = "172.31.1.0/24" // Altere esse valor para o correspondente com sua VPC
 }
 
 provider "aws" {
